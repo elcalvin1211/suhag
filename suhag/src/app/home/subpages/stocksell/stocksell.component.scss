@@ -1,0 +1,104 @@
+@use '../../../css/abstract';
+
+
+.invoice-container {
+  width: 85vw;
+  margin: auto;
+
+  .title {
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+
+  .input-output {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin: 20px;
+
+    .input {
+      // flex-grow: 1;
+      flex-basis: 50%;
+
+      & form label {
+        margin: 10px;
+      }
+
+      & form input {
+        display: block;
+        margin: 10px;
+      }
+    }
+
+
+
+    .input-name {
+      width: 60%;
+    }
+
+    .input-qty {
+      width: 10%;
+    }
+
+    .btn {
+      margin: 10px;
+    }
+  }
+
+
+  .output {
+    flex-basis: 50%;
+    border: 2px solid abstract.$primary;
+    height: fit-content;
+    margin: 0 80px;
+
+    .titles {
+      display: flex;
+      gap: 15px;
+      margin: 20px;
+      flex-wrap: nowrap;
+
+      .invoice-name {
+        text-align: left;
+        flex-basis: 50%;
+      }
+
+      .invoice-ocost {
+        text-align: left;
+        flex-basis: 15%;
+
+      }
+
+      .invoice-qty {
+        flex-basis: 15%;
+        text-align: left;
+      }
+
+      .invoice-cost {
+
+        flex-basis: 20%;
+        text-align: left;
+      }
+    }
+
+    .total-container {
+      display: flex;
+      gap: 5px;
+      margin: 20px;
+      margin-top: 90px;
+      flex-wrap: nowrap;
+      .total-label {
+        text-align: right;
+        flex-basis: 80%;
+        margin-right: 100px;
+      }
+
+      .grand-total {
+        flex-basis: 20%;
+      }
+    }
+  }
+
+}
+
+
