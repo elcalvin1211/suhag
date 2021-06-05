@@ -1,0 +1,69 @@
+@use '../abstract';
+
+.line-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid abstract.$primary;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+        background-color: abstract.$primary;
+        color: abstract.$white;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: abstract.$primary;
+    color: abstract.$white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    &:hover {
+        background-color: abstract.$secondary;
+        
+    }
+}
+
+.menu-item {
+    color: abstract.$primary;
+    cursor: pointer;
+    &:hover {
+        font-weight: 900;
+    }
+}
+
+.active-menu-link {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.active-line-btn {
+    background-color: abstract.$primary;
+    color: abstract.$white;
+}
+
+.edit {
+    cursor: pointer;
+    color: abstract.$edit;
+    &:hover {
+        background-color: abstract.$edit;
+        color: abstract.$white;
+    }
+}
+
+
+.delete {
+    cursor: pointer;
+    color: abstract.$delete;
+    &:hover {
+        background-color: abstract.$delete;
+        color: abstract.$white;
+    }
+}
+
+
+.linkbtn {
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+@use '../abstract';
+
+input {
+    border: 2px solid abstract.$primary;
+    border-radius: 20px;
+    padding: 5px 20px;
+    &:focus {
+        outline: none;
+    }
+    &:disabled {
+        color: abstract.$primary;
+        background-color: abstract.$third;
+        border: 2px solid abstract.$third;
+        cursor: not-allowed;
+    }
+}

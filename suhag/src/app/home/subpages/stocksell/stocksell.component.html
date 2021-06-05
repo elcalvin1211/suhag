@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="invoice-container">
+        <h3 class="title">Invoice</h3>
+        <div class="input-output">
+
+            <!-- Input -->
+            <div class="input">
+                <form action="">
+                    <label for="input-barcode">Barcode no.</label>
+                    <input type="number" placeholder="Barcode no." class="input-barcode" id="input-barcode"> 
+                    <label for="input-name">Brand/Item Name</label>
+                    <input type="text"  class="input-name" id="input-name">
+                    <label for="input-category">Category</label>
+                    <input type="text" class="input-category" id="input-category" value="Bra" disabled>
+                    <label for="inout-cost">Cost</label>
+                    <input type="number" class="input-Cost" id="input-Cost" value="220" disabled>
+                    <input type="number" class="input-newprice" id="input-newprice">
+                    <label for="input-qty">Quality</label>
+                    <input type="number" class="" class="input-qty" id="input-qty" value="2">
+                    <div class="btn">Add</div>
+                </form>
+            </div>
+
+            <!-- output -->
+            <div class="output">
+                <div class="titles">
+                    <div class="invoice-name invoice-title">Item</div>
+                    <div class="invoice-ocost invoice-title">Price</div>
+                    <div class="invoice-qty invoice-title">Qty</div>
+                    <div class="invoice-cost invoice-title">Total</div>
+                </div>
+                <div class="margin-top-div-50"></div>
+                <div class="titles">
+                    <div class="invoice-name">Item Name Bla Bla Bla Bla Bla Bla Bla Bla Bla</div>
+                    <div class="invoice-ocost">220</div>
+                    <div class="invoice-qty">2</div>
+                    <div class="invoice-cost"><s>440</s> 400</div>
+                </div>
+                
+                <!-- Total -->
+                <div class="total-container">
+                    <p class="total-label invoice-title">Total</p>
+                    <div class="grand-total">400</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  <!-- <form action="">
+    <input type="text" placeholder="Barcode no.">
+  </form> -->
+</div>

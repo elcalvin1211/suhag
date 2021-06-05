@@ -1,0 +1,28 @@
+@use '../abstract';
+
+* {
+    font-family: abstract.$main-font;
+    font-size: 18px;
+    font-weight: 600;
+    color: abstract.$primary;
+}
+
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.invoice-title {
+    font-size: 1.1em;
+    font-weight: 900;
+    text-align: left;
+}

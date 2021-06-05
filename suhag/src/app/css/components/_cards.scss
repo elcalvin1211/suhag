@@ -1,0 +1,29 @@
+@use '../abstract';
+
+.card {
+    width: 250px;
+    // flex-grow: 1;
+    height: 100px;
+    border-radius: 20px;
+    background-color: abstract.$primary;
+    text-align: center;
+}
+
+.card-label {
+    color: abstract.$white;
+    opacity: .7;
+    padding-top: 25px;
+}
+.card-value {
+    color: abstract.$white;
+    font-size: 1.5em;
+    margin-top: 5px;
+    
+}
+
+.card-only-value {
+    color: abstract.$white;
+    font-size: 1.5em;
+    padding-top: 30px;
+    
+}

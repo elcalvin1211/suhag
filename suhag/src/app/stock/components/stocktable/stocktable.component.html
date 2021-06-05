@@ -1,0 +1,31 @@
+
+<div class="table-container">
+  
+  <div class="buttons-list">
+    <div class="btn add" (click)="newStockItem()">Add New Item</div>
+    <div class="searchbar">
+      <input type="text" name="sizeseearch" id="size-search">
+      <img src="../../../../assets/icons/search_black_24dp.svg" alt="search Icon">
+    </div>
+  </div>
+
+
+  <table>
+    <tr>
+      <th>Brand</th>
+      <th>Size</th>
+      <th>Items</th>
+      <th>Breakpoint</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let data of tableData">
+      <td>{{data.brand}}</td>
+      <td>{{data.size}}</td>
+      <td>{{data.items}}</td>
+      <td>{{data.breakpoint}}</td>
+      <td (click)="editStockItem()" class="edit">Edit</td>
+      <td (click)="deleteStockItem()" class="delete">Delete</td>
+    </tr>
+  </table>
+</div>

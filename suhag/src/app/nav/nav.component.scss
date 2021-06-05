@@ -1,0 +1,25 @@
+.nav-container {
+    width: 100%;
+    overflow: hidden;
+    
+    .logo {
+        font-size: 2em;
+        font-weight: bold;
+        float: left;
+        padding: 10px 20px;
+        line-height: 1em;
+    }
+    .menu-container {
+        float: right;
+        // margin-right: 20px;
+        padding: 10px 20px;
+        line-height: 2em;
+        li {
+            display: inline-block;  
+            margin-left: 20px;
+        }
+        .line-btn {
+            line-height: 1em;
+        }
+    }
+}
