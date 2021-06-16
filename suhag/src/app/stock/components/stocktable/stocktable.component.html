@@ -12,20 +12,21 @@
 
   <table>
     <tr>
-      <th>Brand</th>
-      <th>Size</th>
+      <th>Brand/Item Name</th>
+      <th>Category</th>
       <th>Items</th>
       <th>Breakpoint</th>
       <th></th>
       <th></th>
     </tr>
-    <tr *ngFor="let data of tableData">
-      <td>{{data.brand}}</td>
-      <td>{{data.size}}</td>
-      <td>{{data.items}}</td>
-      <td>{{data.breakpoint}}</td>
-      <td (click)="editStockItem()" class="edit">Edit</td>
-      <td (click)="deleteStockItem()" class="delete">Delete</td>
+    <tr  *ngFor="let data of stockTableData"  [class]="data.id" >
+      <td id="checkbox"><input type="checkbox" [name]="data.id" [id]="data.id"></td>
+      <td (click)="selectStock(data.id)">{{data.item}}</td>
+      <td (click)="selectStock(data.id)">{{data.category}}</td>
+      <td (click)="selectStock(data.id)">{{data.items}}</td>
+      <td (click)="selectStock(data.id)">{{data.breakpoint}}</td>
+      <td (click)="editStockItem(data)" class="editicon"></td>
+      <td (click)="deleteStockItem(data)" class="deleteicon"></td>
     </tr>
   </table>
 </div>

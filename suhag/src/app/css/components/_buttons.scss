@@ -53,6 +53,27 @@
     }
 }
 
+.cancelbtn {
+    margin-left: 20px;
+    color: white;
+    background-color: abstract.$cancel;
+}
+
+.ok {
+    color: white;
+    background-color: abstract.$ok;
+}
+
+.closeicon {
+    position: fixed;
+    float: right;
+    margin: 20px;
+    width: 40px;
+    right: 0;
+    opacity: .6;
+    cursor: pointer;
+}
+
 
 .delete {
     cursor: pointer;
@@ -67,3 +88,63 @@
 .linkbtn {
     cursor: pointer;
 }
+
+
+.addicon {
+    // text-align: center;
+    background-image: url("../../../assets/icons/add_btn.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.editicon {
+    // text-align: center;
+    background-image: url("../../../assets/icons/edit_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.deleteicon {
+    // text-align: center;
+    background-image: url("../../../assets/icons/delete_forever_black_24dp.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+/* Dropdown Button */
+  .dropdown {
+      position: relative;
+      
+      .searchbtn {
+        position: relative;
+        margin: 10px;
+        width: 250px;
+        z-index: 1;
+      }
+      .dropdown-content {
+        position: absolute;
+        background-color: abstract.$third;
+        padding-top: 20px;
+        margin-left: 10px;
+        transform: translateY(-30px);
+        width: 250px;
+        &:last-child {
+            border-radius: 0px 0px 20px 20px;
+        }
+        
+        & div {
+            padding: 10px;
+            
+            &:hover {
+                background-color: abstract.$secondary;
+            }
+            &:last-child {
+                border-radius: 0px 0px 20px 20px;
+            }
+        }
+      }
+  }

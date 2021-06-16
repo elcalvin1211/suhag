@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StockService } from 'src/app/services/stock.service';
+
 
 @Component({
   selector: 'app-stockdash',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StockdashComponent implements OnInit {
 
-  constructor() { }
+  lowStock:number = 0;
+
+  constructor(private StockService: StockService ) { }
 
   ngOnInit(): void {
+    this.lowStock = this.StockService.getLowStock();
   }
 
 }

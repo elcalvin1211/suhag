@@ -18,14 +18,16 @@
       <th>Number</th>
       <th></th>
       <th></th>
+      <th></th>
     </tr>
     <tr *ngFor="let data of sizeData">
       <td>{{data.name}}</td>
       <td>{{data.phone}}</td>
       <td>{{data.brand}}</td>
       <td>{{data.size}}</td>
-      <td (click)="editSize()" class="edit">Edit</td>
-      <td (click)="deleteSize(data)" class="delete">Delete</td>
+      <td (click)="editSize()" class="addicon"></td>
+      <td (click)="editSize()" class="editicon"></td>
+      <td (click)="deleteSize(data)" class="deleteicon"></td>
     </tr>
   </table>
 </div>

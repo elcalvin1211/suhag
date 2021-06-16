@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SizeService } from 'src/app/size.service';
+import { SizeService } from 'src/app/services/size.service';
 
 @Component({
   selector: 'app-sizedash',

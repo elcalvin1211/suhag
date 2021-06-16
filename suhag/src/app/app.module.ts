@@ -13,6 +13,9 @@ import { SizedashComponent } from './size/components/sizedash/sizedash.component
 import { StockdashComponent } from './stock/components/stockdash/stockdash.component';
 import { StocktableComponent } from './stock/components/stocktable/stocktable.component';
 import { StocksellComponent } from './home/subpages/stocksell/stocksell.component';
+import { ReturnComponent } from './home/subpages/return/return.component';
+import { AddStockItemComponent } from './stock/floatingforms/add-stock-item/add-stock-item.component';
+import { EditStockItemComponent } from './stock/floatingforms/edit-stock-item/edit-stock-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,11 @@ import { StocksellComponent } from './home/subpages/stocksell/stocksell.componen
     SizedashComponent,
     StockdashComponent,
     StocktableComponent,
-    StocksellComponent
+    StocksellComponent,
+    ReturnComponent,
+    AddStockItemComponent,
+    EditStockItemComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,51 @@
+<div class="floatingforms-background" (click)="closeFloatingForm()"></div>
+<div class="floatingforms-container">
+    <img src="../../../../assets/icons/close.svg" alt="close" (click)="closeFloatingForm()" class="closeicon">
+    <div class="form-box">
+        
+        <!-- Input -->
+        <form class="floating-form" action="">
+            <h2 class="title">Add New Item</h2>
+            <div class="item-input-box1">
+                <label for="input-barcode">Barcode no.</label>
+                <input type="number" placeholder="Barcode no." class="input-barcode" id="input-barcode">
+
+                <label for="input-name">Brand/Item Name</label>
+                <input type="text" class="input-name" id="input-name">
+
+                <label for="input-category">Category</label>
+                <input type="text" class="input-category" id="input-category">
+
+                <label for="input-cost">Cost</label>
+                <input type="number" class="input-cost" id="input-Cost">
+
+            </div>
+
+            <div class="item-input-box2">
+                <label for="input-items">Items</label>
+                <input type="number" class="input-items" id="input-items">
+
+                <label for="input-cost">breakpoint</label>
+                <input type="number" class="input-breakpoint" id="input-breakpoint">
+
+                <label for="input-where">Where?</label>
+                <div class="dropdown">
+                    <input type="search" (click)="search()" class="searchbtn">
+                    <div [style.display]="dropdown" class="dropdown-content">
+                        <div>Showroom</div>
+                        <div>Warehouse</div>
+                    </div>
+                </div>
+
+                <label for="input-qty">Quality</label>
+                <input type="number" class="" class="input-qty" id="input-qty"s>
+
+            </div>
+
+            <div class="item-button-box">
+                <div class="btn">Add</div>
+                <div (click)="closeFloatingForm()" class="btn cancelbtn">Cancel</div>
+            </div>
+        </form>
+    </div>
+</div>

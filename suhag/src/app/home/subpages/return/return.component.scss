@@ -1,0 +1,61 @@
+@use '../../../css/abstract';
+
+
+.invoice-container {
+  width: 85vw;
+  margin: auto;
+
+  .title {
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+
+  .input-output {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin: 20px;
+
+    .input {
+      // flex-grow: 1;
+      flex-basis: 50%;
+
+      & form label {
+        margin: 10px;
+      }
+
+      & form input {
+        display: block;
+        margin: 10px;
+      }
+    }
+
+
+
+    .input-name {
+      width: 60%;
+    }
+  }
+
+
+  .output {
+    flex-basis: 50%;
+    border: 2px solid abstract.$primary;
+    height: fit-content;
+    margin: 0 15%;
+
+    .titles {
+      margin: 20px;
+      flex-wrap: nowrap;
+
+      & span {
+          font-weight: 900;
+      }
+      & p {
+        text-align: left;
+        margin: 10px;
+      }
+    }
+  }
+
+}

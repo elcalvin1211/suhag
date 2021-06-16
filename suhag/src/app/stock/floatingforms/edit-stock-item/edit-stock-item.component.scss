@@ -1,0 +1,43 @@
+
+
+.btn {
+    margin-top: 20px;
+}
+
+
+    .floating-form {
+        padding: 60px;
+        
+    
+        & input {
+            display: block;
+            margin: 10px;
+        }
+    
+    
+        .input-cost {
+            width: 100px;
+        }
+    
+        .input-qty {
+            width: 100px;
+        }
+        .title {
+            margin-bottom: 30px;
+        }
+    
+        .item-input-box1 {
+            padding: 10px;
+            width: 45%;
+            display: inline-block;
+        }
+    
+        .item-input-box2 {
+            padding: 10px;
+            width: 45%;
+            display: inline-block;
+        }
+        .item-button-box  {
+          display: block;
+        }
+    }

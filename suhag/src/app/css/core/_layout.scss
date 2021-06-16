@@ -1,3 +1,6 @@
+@use '../abstract';
+
+
 .container {
     margin: 30px 20px;
 }
@@ -34,6 +37,7 @@
 .searchbar {
     display: inline-block;
     position: relative;
+
     img {
         cursor: pointer;
         position: absolute;
@@ -42,6 +46,47 @@
     }
 }
 
+
+//Floating Forms
+.floatingforms-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+}
+
+.floatingforms-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: abstract.$primary;
+    mix-blend-mode: multiply;
+    top: 0;
+}
+
+.form-box {
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+    background-color: abstract.$white;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 10vh;
+
+}
+
+
+
+
+
+#checkbox {
+    display: none;
+}
+
+
+
+
+//Margins
 .margin-top-div-50 {
     margin-top: 50px;
     width: 100%;
